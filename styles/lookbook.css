@@ -1,0 +1,128 @@
+body {
+  margin: 0;
+  height: 100%;
+  width: 100%;
+  display: inline;
+  font: 500 18px 'Poppins', sans-serif;
+}
+
+.navbar {
+    height: 50px;
+    width: 100%;
+    background-color: black;
+    display: block;
+  }
+
+.nav-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    padding-top: 5px;
+  }
+
+.logo {
+    filter: invert(100%);
+    display: block;
+    float: left;
+    width: 100px;
+    padding-top: 3px;
+  }
+
+.header-links {
+    display: flex;
+    float: right;
+}
+
+.header-links a {
+    text-decoration: none;
+    font: 500 18px 'Poppins', sans-serif;
+    padding-left: 50px;
+    color: white;
+    padding-top: 5px;
+      }
+
+.header-links a:hover {
+    font-weight: 700;
+}
+
+.hamburger-menu {
+    display: none;
+    align-items: right;
+}
+
+.footer {
+    margin: 0;
+    height: 200px;
+    width: 100%;
+    background-color: black;
+    color: white;
+  }
+  
+  .footer-container {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    padding-top: 3%;
+    
+    font: 300 18px 'Poppins', sans-serif;
+  }
+
+  .footer-column .logo {
+    width: 160px;
+    filter: invert(100%);
+  }
+
+
+  .footer-column ul {
+    list-style: none;
+    padding-bottom: 10px;
+    font: 500 18px 'Poppins', sans-serif;
+  }
+
+  .footer-social ul {
+    list-style: none;
+    padding-bottom: 24px;
+    font: 500 18px 'Poppins', sans-serif;
+  }
+  
+  .footer-column li a {
+    color:white;
+    text-decoration:none;
+    opacity:0.8;
+  }
+  
+  .footer li a:hover {
+    opacity:1;
+  }
+
+  .footer-social img {
+    width: 30px;
+    height: 30px;
+    opacity:0.75;
+    filter: invert(100%);
+  }
+ 
+
+
+
+
+
+.gallery {
+    margin: 0 auto;
+    padding-top: 5px;
+    padding-bottom: 20px;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(2, 25%);
+    grid-template-rows: repeat(4, 25%);
+    grid-gap: 5px;
+}
+
+.gallery-image {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block; 
+  }
