@@ -1,112 +1,59 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Products - Clothing Supply</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
-        <link href="styles/products.css" rel="stylesheet">
+
+<head>
+	<title>Products - Clothing Supply</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="styles/headerfooter.css" rel="stylesheet">
+    <link href="styles/products.css" rel="stylesheet">
     </head>
-    <body>
-        <header class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
-                </div>
-                <div class="header-links">
-                  <a href="products.html">Products</a>
-                  <a href="lookbook.html">Lookbook</a>
-                  <a href="cart.html">Cart</a>
-                  <a href="login.html">Account</a>
-                </div>
-                <label for="mobile-menu">
-                    <img class="hamburger-menu" src="images/menu.svg" alt="Menu" />
-                </label>
-            </div>
-        </header>
-        <section class="product-grid">
-            <div class="product">
-                <img src="images/tshirt.png" class="product-photo" alt="Tshirt" />
-                <div class="product-description">
-                    <h1>Tshirt</h1>
-                    <p>Russian Violet</p>
-                    <form action="tshirt.html">
-                    <button class="go-to-product">Go to Product</button>
-                    </form>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/cap.png" class="product-photo" alt="Cap" />
-                <div class="product-description">
-                    <h1>Cap</h1>
-                    <p>Sunglow</p>
-                    <button class="go-to-product">Go to Product</button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/sweatshirt.png" class="product-photo" alt="Sweatshirt" />
-                <div class="product-description">
-                    <h2>Sweatshirt</h2>
-                    <p>Paradise Pink</p>
-                    <button class="go-to-product">Go to Product</button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/hoodie.png" class="product-photo" alt="Hoodie" />
-                <div class="product-description">
-                    <h2>Hoodie</h2>
-                    <p>Caribbean Ocean</p>
-                    <button class="go-to-product">Go to Product</button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/totebag.png" class="product-photo" alt="Totebag" />
-                <div class="product-description">
-                    <h2>Totebag</h2>
-                    <p>Pistachio</p>
-                    <button class="go-to-product">Go to Product</button>
-                </div>
-            </div>
-            <div class="product">
-                <img src="images/beanie.png" class="product-photo" alt="Beanie" />
-                <div class="product-description">
-                    <h2>Beanie</h2>
-                    <p>Red Pigment</p>
-                    <form action="beanie.html">
-                    <button class="go-to-product">Go to Product</button>
-                    </form>
-                </div>
-            </div>
-        </section>
-        <div class="footer">
-            <footer>
-                <div class="footer-container">
-                        <div class="footer-column">
-                            <div class="logo">
-                                <a href="homepage.html"><img src="images/logo.svg" alt="Logo" /></a>
-                            </div>
-                            <p class="copyright">Clothing Supply © 2021</p>  
-                        </div>
-                        <div class="footer-column">
-                            <ul>
-                                <li><a href="#">Products</a></li>
-                                <li><a href="#">Lookbook</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-column">
-                            <ul>
-                                <li><a href="#">Cart</a></li>
-                                <li><a href="#">Account</a></li>
-                            </ul>
-                        </div>
-                        <div class="footer-social">
-                            <a href="#" class="social-icon"><img src="images/icon-facebook.svg"></img></a>
-                            <a href="#" class="social-icon"><img src="images/icon-instagram.svg"></img></a>
-                        </div>
-                    </div>
-                </div>
-            </footer>
-        </div>
-        <script src="script.js"></script>
-    </body>
+
+<body>
+	<header class="navbar">
+		<div class="nav-container">
+			<div class="logo">
+				<a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
+			</div>
+			<div class="header-links"> <a href="products.html">Products</a> <a href="lookbook.html">Lookbook</a> <a class="header-cart" href="cart.html"> Cart
+                      <span class="header-items-in-cart">(0)</span>
+                    </a> <a href="login.html">Account</a> </div>
+			<label for="mobile-menu"> <img class="hamburger-menu" src="images/menu.svg" alt="Menu" /> </label>
+		</div>
+	</header>
+	<section class="item-grid">
+	</section>
+	<div class="footer">
+		<footer>
+			<div class="footer-container">
+				<div class="footer-column">
+					<div class="logo">
+						<a href="homepage.html"><img src="images/logo.svg" alt="Logo" /></a>
+					</div>
+					<p class="copyright">Clothing Supply © 2021</p>
+				</div>
+				<div class="footer-column">
+					<ul>
+						<li><a href="#">Products</a></li>
+						<li><a href="#">Lookbook</a></li>
+					</ul>
+				</div>
+				<div class="footer-column">
+					<ul>
+						<li><a href="#">Cart</a></li>
+						<li><a href="#">Account</a></li>
+					</ul>
+				</div>
+				<div class="footer-social">
+					<a href="#" class="social-icon"><img src="images/icon-facebook.svg" /></a>
+					<a href="#" class="social-icon"><img src="images/icon-instagram.svg" /></a>
+				</div>
+			</div>
+		</footer>
+	</div>
+	
+	<script src="script.js"></script>
+</body>
+
 </html>

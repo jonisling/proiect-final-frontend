@@ -1,111 +1,46 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>Clothing Supply</title>
-    </head>
-    <body>
-        <header class="navbar">
-            <div class="nav-container">
-                <div class="logo">
-                    <a href="index.html"><img src="images/logo.svg" alt="Logo" /></a>
-                </div>
-                <div class="header-links">
-                  <a href="products.html">Products</a>
-                  <a href="lookbook.html">Lookbook</a>
-                  <a href="cart.html">Cart</a>
-                  <a href="login.html">Account</a>
-                </div>
-                <label for="mobile-menu">
-                    <img class="hamburger-menu" src="images/menu.svg" alt="Menu" />
-                </label>
-            </div>
-        </header>
-        <section class="hero-shot">
-            <img src="hero-shot-bg.png" alt="woman wearing Clothing Supply T-Shirt" />
-            <div class="hero-text">
-                <h1>Black friday sale</h1>
-                <p>Get up to 70% off your favorite items.</p>
-            </div>
-        </section>
-        <section class="our-promise">
-            <h2>Our Promise</h2>
-            <div class="promise-item">
-                <div class="promise-item-image" data-image-src="images/organic-cotton.png"></div>
-                <h4>Organic Cotton</h4>
-                <p>
-                    From seed to shelf, we use organic cotton and low impact dyes. It's better for you and the planet.
-                </p>
-            </div>
-            <div class="promise-item">
-                <div class="promise-item-image" data-image-src="images/menu.svg"></div>
-                <h4>Free Returns</h4>
-                <p>
-                    No matter the issue, we cover all the expenses when you return an item. 
-                </p>
-                <div class="promise-item">
-                    <div class="promise-item-image" data-image-src="images/menu.svg"></div>
-                    <h4>Best Working Conditions</h4>
-                    <p>
-                        When you choose us, you're ensuring healthy working conditions for factory workers. 
-                    </p>
-            </div>
-        </section>
-        <section class="products">
-            <div class="product-grid">
-                <a href="tshirt.html">
-                    <div class="product-grid-bg">
-                        <img src="tshirt.png" alt="Black t-shirt on pink background" />
-                    </div>
-                </a>
-                <a href="hoodie.html">
-                    <div class="product-grid-bg">
-                        <img src="hoodie.png" alt="Black T-Shirt on pink background" />
-                    </div> 
-                    </a>
-                <a href="sweatshirt.html">
-                    <div class="product-grid-bg">
-                        <img src="sweatshirt.png" alt="Black T-Shirt on pink background" />
-                    </div>
-                </a>
-                <a href="cap.html">
-                    <div class="product-grid-bg">
-                        <img src="cap.png" alt="Yellow cap on purple background" />
-                    </div> 
-                </a>
-            </div>
-            <button>See all</button>
-        </section>
-        <section class="lookbook">
-            <div class="lookbook-preview-grid">
-                <img src="lookbook-preview.png" alt="Lookbook photo"/>
-                <img src="lookbook-preview2.png" alt="Lookbook photo"/>
-                <img src="lookbook-preview3.png" alt="Lookbook photo"/>
-            </div>
-            <div class="lookbook-text">
-                <h3>Check the lookbook</h3>
-                <button>Go to Gallery</button>
-            </div>
-        </section>
-        <footer>
-            <div class="flex-row">
-                <div class="flex-column">
-                    <a href="homepage.html"><img src="images/logo.svg" alt="Logo" /></a>
-                    <p>© Clothing Supply 2021. All rights reserved</p>
-                </div>
-                <div class="flex-column">
-                    <a href="#products">Products</a>
-                    <a href="#lookbook">Lookbook</a>
-                </div>
-                <div class="flex-column">
-                    <a href="#lookbook">Cart</a>
-                    <a href="#lookbook">Account</a>
-                </div>
-                <div class="flex-column">
-                    <a href="#"><span class="icon-facebook.svg"></span></a>
-                        <a href="#"><span class="icon-instagram.svg"></span></a>
-                </div>
-            </div>
-        </footer>
-        <script src="script.js"></script>
-    </body>
+<head>
+    <title>Login/Signup - Clothing Supply</title>
+    <link href="styles/login.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <form class="form" id="login">
+            <h1 class="login-title">Welcome Back</h1>
+
+            <input type="text" class="login-input" id="usernameLogin" placeholder="Email">
+
+            <input type="password" class="login-input" id="passwordLogin" placeholder="Password">
+
+            <input type="submit" class="login-button" value="Login" onClick="loginAccount()"/>
+
+            <p class="form-links">
+                <a href="#" class="link" id="goToSignUp">Don't have an account? Sign up.</a>
+            </p>
+        </form>
+
+        <form class="form hide-screen" id="signUp">
+            <h1 class="login-title">Create An Account</h1>
+
+            <input type="text" class="login-input" id="username" placeholder="Email" value="">
+
+            <input type="password" class="login-input" id="password" placeholder="Password" value="">
+
+            <input type="checkbox" class="toc" name="toc" required>
+            <label for="toc">I hereby consent to the Terms and Conditions  
+            </label>
+           
+            <input type="submit" class="login-button" value="get Account" onClick="registerAccount()"/>
+
+            <p class="form-links">
+                <a href="#" class="link" id="goToLogin">Already have an account? Log in.</a>
+            </p>
+        </form>
+    </div>
+    <script src="script.js"></script>
+</body>
 </html>
